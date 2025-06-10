@@ -1,0 +1,11 @@
+{
+  "profile_icon" : "div[aria-label='View my account']",
+  "profile_btn" : "button[class='bg-cl-transparent brdr-none p0']",
+  "input_field" : "phonenumber",
+  "login_btn": "//button[@class='continue-btn']",
+  "otp_field1": "(//input[@class='active'])[1]",
+  "otp_fields": "(//input)[3]",
+  "close_popup" : "button[aria-label='Close Message']",
+  "eng_btn" : "button[name='button']",
+  "error_msg" : "//span[@class='error-msg']"
+}

@@ -1,0 +1,6 @@
+package org.example12.Enums.Login;
+
+public enum LoginEnums {
+
+     PROFILE_BTN,URL,LOGIN_BTN,INPUT_FIELD,PROFILE_ICON,OTP_FIELD1,OTP_FIELDS,CLOSE_POPUP,ENG_BTN,ERROR_MSG
+}
