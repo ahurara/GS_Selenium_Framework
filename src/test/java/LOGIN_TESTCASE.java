@@ -7,8 +7,7 @@ import org.testng.annotations.Test;
 
 import static org.example12.PageObjects.GS_LOGIN.LoginPageLocators.errMsg;
 import static org.example12.PageObjects.GS_LOGIN.LoginTestData.*;
-import static org.example12.drivers.WebDriverManager.maximizeWindow;
-import static org.example12.drivers.WebDriverManager.setUpWebDriver;
+import static org.example12.drivers.WebDriverManager.*;
 
 public class LOGIN_TESTCASE {
 
@@ -55,7 +54,7 @@ public class LOGIN_TESTCASE {
 
     @AfterSuite
     public void tearDown() {
-//        demoQAFormPage = null;
-//        quitWebDriver();
+        GS_Login = null;
+        quitWebDriver();
     }
 }

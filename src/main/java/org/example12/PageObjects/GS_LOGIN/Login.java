@@ -25,6 +25,7 @@ public class Login {
     //click to change the langage
     public void clickToChangeLanguage(){
         WebElement languageBtn = getWebDriver().findElement(By.cssSelector(engBtn));
+        System.out.println("Changing the language to English");
         languageBtn.click();
     }
 
@@ -34,6 +35,7 @@ public class Login {
         waitForInSeconds(5);
         By profileBtnBy = By.cssSelector(profileIconLoctor);
         WebElement profileIcon = getWebDriver().findElement(profileBtnBy);
+        System.out.println("Clicking the profile icon ");
         profileIcon.click();
 
     }
@@ -69,10 +71,12 @@ public class Login {
         WebDriverManager.waitForElement(inputPhone,5);
         WebElement phNumber = getWebDriver().findElement(inputPhone);
         scrollToElement(phNumber);
+        System.out.println("Entering Phone Number");
         phNumber.sendKeys(phNo);
 
         // click after input phone number
         WebElement login = getWebDriver().findElement(By.xpath(loginBtn));
+        System.out.println("Clicking on login button");
         login.click();
 
     }
@@ -83,6 +87,7 @@ public class Login {
 
         WebElement otpField = getWebDriver().findElement(otpF1);
         scrollToElement(otpField);
+        System.out.println("Entering OTP");
         otpField.sendKeys(OTP);
 
     }
